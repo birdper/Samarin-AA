@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.App.SearchView" parent="Widget.Material3.SearchView">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.SearchView</item>
+        <item name="android:textAppearance">@style/TextAppearance.App.SearchView</item>
+    </style>
+
+    <style name="ThemeOverlay.App.SearchView" parent="">
+        <item name="android:backgroundTint">@color/white</item>
+    </style>
+
+    <style name="TextAppearance.App.SearchView" parent="TextAppearance.Material3.SearchView">
+        <item name="android:textColorHint">@color/label_secondary</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="Widget.App.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.BottomNavigationView</item>
+    </style>
+
+    <style name="ThemeOverlay.App.BottomNavigationView" parent="">
+        <!-- Color selected tab -->
+        <item name="colorSecondaryContainer">@color/blue_600</item>
+        <!-- <item name="colorSurfaceContainer">@android:color/transparent</item>-->
+        <!-- <item name="colorOnSurfaceVariant">@color/blue_200</item>-->
+        <!-- <item name="colorOnPrimaryContainer">@color/blue_600</item>-->
+        <!-- <item name="colorOnSecondaryContainer">@color/blue_600</item>-->
+    </style>
+</resources>
