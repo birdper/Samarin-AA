@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tab_popular"
+        android:enabled="true"
+        android:icon="@drawable/ic_round_trending_up_24"
+        android:title="@string/tab_popular" />
+    <item
+        android:id="@+id/tab_favorite"
+        android:enabled="true"
+        android:icon="@drawable/ic_round_star_24"
+        android:title="@string/tab_favorite" />
+</menu>
