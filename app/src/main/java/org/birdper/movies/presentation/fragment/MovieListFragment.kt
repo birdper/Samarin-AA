@@ -7,6 +7,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import androidx.navigation.fragment.findNavController
 import kotlinx.coroutines.launch
 import org.birdper.movies.R
 import org.birdper.movies.databinding.FragmentMovieListBinding
@@ -72,6 +73,11 @@ class MovieListFragment : Fragment(R.layout.fragment_movie_list) {
     }
 
     private fun onClickItem(movieId: Int) {
+        findNavController().navigate(
+            MovieListFragmentDirections.actionMovieListFragmentToMovieDetailsFragment(
+                movieId
+            )
+        )
     }
 
     private fun onLongClickItem(movieId: Int) {
