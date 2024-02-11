@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">Cinema</string>
+    <string name="app_name">Movies</string>
+
+    <string name="hint_search">Найти</string>
+    <string name="tab_popular">Популярные</string>
+    <string name="tab_favorite">Избранное</string>
+    <string name="genres"><b>Жанры:</b> %1$s</string>
+    <string name="countries"><b>Страны:</b> %1$s</string>
+
+    <string name="description_img_poster">Постер фильма</string>
+    <string name="description_action_search">Кнопка поиска фильма</string>
+    <string name="description_favorite_mark">Сохранен в избранном</string>
 </resources>
