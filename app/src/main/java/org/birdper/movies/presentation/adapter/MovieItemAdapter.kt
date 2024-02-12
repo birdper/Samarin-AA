@@ -30,7 +30,7 @@ class MovieItemAdapter(
 
     object MovieItemDiffCallback : DiffUtil.ItemCallback<MovieItem>() {
         override fun areItemsTheSame(oldItem: MovieItem, newItem: MovieItem): Boolean =
-            oldItem.id == newItem.id
+            oldItem.kinopoiskId == newItem.kinopoiskId
 
         override fun areContentsTheSame(oldItem: MovieItem, newItem: MovieItem): Boolean =
             oldItem == newItem

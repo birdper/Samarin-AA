@@ -1,13 +1,18 @@
 package org.birdper.movies.presentation.model
 
+import org.birdper.movies.domain.model.Country
+import org.birdper.movies.domain.model.Genre
+
 data class MovieItem(
-    val id: Int,
-    val name: String,
+    val kinopoiskId: Int,
+    val nameRu: String,
     val year: String,
-    val genre: String,
-    val description: String,
+    val genres: List<Genre>,
+    val countries: List<Country>,
+    val description: String = "",
+    val posterUrl: String,
     val posterPreviewUrl: String,
     val isFavorite: Boolean = false,
 ) {
-    val genresAndYear = "$genre ($year)"
+    val genresAndYear = "${genres[0].genre} ($year)"
 }
