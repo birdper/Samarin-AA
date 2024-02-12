@@ -23,7 +23,7 @@ class MovieDetailsViewModel(
                 _state.update { state ->
                     state.copy(
                         id = movieId,
-                        name = movieItem.name,
+                        name = movieItem.nameRu,
                     )
                 }
             }

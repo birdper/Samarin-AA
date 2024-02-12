@@ -17,12 +17,12 @@ class MovieItemViewHolder(
         binding.root.setOnClickListener {
             if (adapterPosition == RecyclerView.NO_POSITION)
                 return@setOnClickListener
-            onClickItem(movieItem.id)
+            onClickItem(movieItem.kinopoiskId)
         }
         binding.root.setOnLongClickListener {
             if (adapterPosition == RecyclerView.NO_POSITION)
                 return@setOnLongClickListener false
-            onLongClickItem(movieItem.id)
+            onLongClickItem(movieItem.kinopoiskId)
             true
         }
     }
@@ -30,7 +30,7 @@ class MovieItemViewHolder(
     fun onBind(item: MovieItem) {
         movieItem = item
         with(binding) {
-            tvMovieName.text = item.name
+            tvMovieName.text = item.nameRu
             tvGenreAndYear.text = item.genresAndYear
             imgFavorite.isGone = !item.isFavorite
         }
